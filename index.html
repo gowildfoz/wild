@@ -1,18 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <style>
-    header {
-      background-image: url('cover.jpg');
-      background-size: cover;
-      background-position: center;
-    }
-  </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Go Wild Skydive | Foz do Iguaçu</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <style>
     body {
       margin: 0;
@@ -21,17 +13,21 @@
       color: #111;
     }
     header {
-      background: #d10c20;
+      background: #d10c20 url('cover.jpg') center/cover no-repeat;
       color: #fff;
       text-align: center;
       padding: 40px 20px;
     }
     header img {
-      width: 120px;
+      width: 100px;
+      max-width: 80%;
     }
     h1 {
-      font-size: 28px;
+      font-size: 6vw;
       margin-top: 20px;
+    }
+    p {
+      font-size: 4vw;
     }
     .container {
       max-width: 800px;
@@ -44,7 +40,11 @@
       padding-left: 15px;
     }
     .package h2 {
+      font-size: 5vw;
       margin-bottom: 10px;
+    }
+    .package p {
+      font-size: 4vw;
     }
     .cta-button {
       display: block;
@@ -55,7 +55,7 @@
       padding: 16px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 4.5vw;
       border-radius: 8px;
       margin: 30px 0;
     }
@@ -65,13 +65,19 @@
       border-left: 3px solid #d10c20;
       margin: 30px 0;
       padding-left: 15px;
+      font-size: 4vw;
     }
-    .faq {
-      margin-top: 40px;
-    }
-    .faq h3 {
-      margin-top: 20px;
+    .faq h2, .faq h3 {
       color: #d10c20;
+      font-size: 5vw;
+    }
+    .faq p {
+      font-size: 4vw;
+    }
+    @media (min-width: 768px) {
+      h1, .faq h2, .faq h3 { font-size: 28px; }
+      .package h2 { font-size: 24px; }
+      .package p, .faq p, blockquote, .cta-button, p { font-size: 18px; }
     }
   </style>
 </head>
